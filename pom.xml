@@ -73,9 +73,9 @@ Portions Copyright (c) 2018, Chris Fraire <cfraire@me.com>.
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.12</version>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>5.4.2</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.bcel</groupId>
@@ -213,7 +213,7 @@ Portions Copyright (c) 2018, Chris Fraire <cfraire@me.com>.
                     <forkCount>1</forkCount>
                     <reuseForks>false</reuseForks>
                 </configuration>
-                <version>2.22.0</version>
+                <version>3.0.0-M3</version>
                 <executions>
                     <execution>
                         <id>run-unit-tests</id>
@@ -282,6 +282,14 @@ Portions Copyright (c) 2018, Chris Fraire <cfraire@me.com>.
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>2.9</version>
             </plugin>
+<!--             <plugin> -->
+<!--                 <groupId>org.apache.maven.plugins</groupId> -->
+<!--                 <artifactId>maven-eclipse-plugin</artifactId> -->
+<!--                 <configuration> -->
+<!--                     <downloadSources>true</downloadSources> -->
+<!--                     <downloadJavadocs>true</downloadJavadocs> -->
+<!--                 </configuration> -->
+<!--             </plugin> -->
         </plugins>
         <pluginManagement>
             <plugins>
